@@ -1173,6 +1173,13 @@ button { font-family: inherit; }
 }
 
 @media (max-width: 768px) {
+  /* Disable scroll-reveal on mobile — stacked elements create large blank gaps */
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
   .services-grid     { grid-template-columns: 1fr; }
   .packages-grid     { grid-template-columns: 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
