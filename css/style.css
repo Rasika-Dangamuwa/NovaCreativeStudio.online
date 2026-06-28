@@ -724,7 +724,7 @@ button { font-family: inherit; }
 /* ============================================================
    WHY CHOOSE US
    ============================================================ */
-.why-us { padding: 110px 0 160px; }
+.why-us { padding: 110px 0; }
 
 .why-container {
   display: grid;
