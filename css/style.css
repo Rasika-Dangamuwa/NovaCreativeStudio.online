@@ -25,7 +25,7 @@
   --ease:         all 0.3s ease;
 }
 
-html { scroll-behavior: smooth; overflow-x: clip; }
+html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -246,7 +246,6 @@ button { font-family: inherit; }
 .nav-link.active::after { width: 100%; }
 
 .nav-cta { margin-left: 12px; flex-shrink: 0; }
-.nav-cta-mobile { display: none; }
 .nav-logo {
   display: flex;
   align-items: center;
@@ -279,10 +278,9 @@ button { font-family: inherit; }
 .nav-overlay {
   display: none;
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.55);
-  z-index: 999;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 997;
 }
 .nav-overlay.open { display: block; }
 
@@ -1128,53 +1126,30 @@ button { font-family: inherit; }
 }
 
 @media (max-width: 960px) {
-  /* Hamburger nav */
+  .why-us { padding: 80px 0 100px; }
+
+  /* Switch navbar to hamburger at 960px so desktop nav never overflows */
   .nav-cta   { display: none; }
-  .hamburger {
-    display: flex;
-    min-width: 44px;
-    min-height: 44px;
-    align-items: center;
-    justify-content: center;
-  }
+  .hamburger { display: flex; }
 
   .nav-menu {
     position: fixed;
     top: 0; right: -100%;
     width: min(300px, 85vw);
-    height: 100%;
+    height: 100vh;
     background: rgba(8,8,21,0.97);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 0;
-    padding: 80px 36px 40px;
+    justify-content: center;
+    gap: 28px;
+    padding: 48px 36px;
     border-left: 1px solid var(--border);
     transition: right 0.35s ease;
-    z-index: 1001;
-    overflow-y: auto;
+    z-index: 998;
   }
   .nav-menu.open { right: 0; }
-
-  /* M5 — touch-friendly nav links */
-  .nav-menu li { width: 100%; }
-  .nav-link {
-    font-size: 1.1rem;
-    display: block;
-    padding: 13px 0;
-    min-height: 44px;
-    border-bottom: 1px solid var(--border);
-  }
-  .nav-link::after { display: none; }
-
-  /* M4 — CTA inside mobile menu */
-  .nav-cta-mobile {
-    display: block;
-    margin-top: 28px;
-    border-bottom: none !important;
-  }
-  .nav-cta-mobile .btn { width: 100%; justify-content: center; }
+  .nav-link { font-size: 1.1rem; }
 
   /* Page layout */
   .hero-container    { grid-template-columns: 1fr; text-align: center; }
@@ -1185,24 +1160,19 @@ button { font-family: inherit; }
   .hero-stats        { justify-content: center; }
   .hero-scroll       { display: none; }
 
-  /* M11 — text before image on mobile */
   .about-container   { grid-template-columns: 1fr; }
-  .about-image       { order: 2; }
-  .about-content     { order: 1; }
   .about-float-badge { right: 16px; }
 
   .why-container     { grid-template-columns: 1fr; }
+
   .services-grid     { grid-template-columns: repeat(2, 1fr); }
+
   .testimonials-grid { grid-template-columns: 1fr 1fr; }
-  .footer-grid       { grid-template-columns: 1fr 1fr; }
+
+  .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 768px) {
-  /* M9 — reduce section padding (was 110px) */
-  .services, .about, .packages, .why-us, .testimonials, .contact { padding-top: 70px; }
-  .services, .about, .packages, .testimonials, .contact           { padding-bottom: 70px; }
-  .why-us { padding-bottom: 110px; }
-
   .services-grid     { grid-template-columns: 1fr; }
   .packages-grid     { grid-template-columns: 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
@@ -1210,21 +1180,8 @@ button { font-family: inherit; }
   .contact-cards { flex-direction: column; align-items: center; }
   .contact-card  { width: 100%; max-width: 340px; }
 
-  /* M10 — footer column separators */
-  .footer-grid { grid-template-columns: 1fr; gap: 0; }
+  .footer-grid { grid-template-columns: 1fr; }
   .footer-brand p { max-width: 100%; }
-  .footer-col,
-  .footer-brand {
-    padding: 24px 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .footer-brand { padding-top: 0; }
-
-  /* M8 — shrink hero image so it doesn't push content too far down */
-  .hero-image img { max-height: 260px; object-fit: contain; }
-
-  /* M3 — copyright clear of floating WhatsApp button */
-  .footer-bottom { padding-bottom: 90px; }
 }
 
 @media (max-width: 480px) {
@@ -1233,17 +1190,6 @@ button { font-family: inherit; }
   .hero-stats { gap: 14px; }
   .hero-stat strong { font-size: 1.35rem; }
   .stat-divider { height: 30px; }
-
-  /* M7 — fix illegible text sizes */
-  .logo-sub    { display: none; }           /* 7px → hidden (M14) */
-  .hero-badge  { font-size: 0.78rem; }      /* was 0.78rem, stays readable */
-  .hero-stat span { font-size: 0.72rem; }
-  .section-badge  { font-size: 0.68rem; }
-
-  /* M12 — floating buttons: separate horizontally so they don't cluster */
   .wa-float  { width: 54px; height: 54px; font-size: 1.6rem; bottom: 22px; right: 22px; }
-  .back-top  { bottom: 22px; right: 88px; }
-
-  /* M3 — extra space so copyright clears the buttons */
-  .footer-bottom { padding-bottom: 100px; }
+  .back-top  { right: 22px; bottom: 100px; }
 }
