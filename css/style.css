@@ -915,6 +915,7 @@ button { font-family: inherit; }
 }
 .cc-icon.whatsapp  { background: rgba(37,211,102,0.14); color: var(--green); }
 .cc-icon.phone     { background: rgba(255,45,85,0.14);  color: var(--pink); }
+.cc-icon.email     { background: rgba(255,124,42,0.14); color: var(--orange); }
 .cc-icon.location  { background: rgba(139,47,201,0.14); color: var(--purple); }
 
 .contact-card strong { display: block; font-size: 0.82rem; color: var(--muted); margin-bottom: 2px; }
