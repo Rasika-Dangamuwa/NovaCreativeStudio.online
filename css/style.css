@@ -1164,7 +1164,8 @@ button { font-family: inherit; }
   .about-container   { grid-template-columns: 1fr; gap: 40px; }
   .about-float-badge { right: 16px; }
   .about-content     { text-align: center; }
-  .about-feature     { justify-content: center; }
+  .about-features    { max-width: 320px; margin: 28px auto 36px; }
+  .about-feature     { justify-content: flex-start; text-align: left; }
   .about-content .btn { width: 100%; justify-content: center; }
 
   .why-container     { grid-template-columns: 1fr; }
