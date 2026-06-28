@@ -624,6 +624,8 @@ button { font-family: inherit; }
   border-bottom: 1px solid var(--border);
 }
 
+.package-header { text-align: center; }
+
 .pkg-icon {
   width: 46px; height: 46px;
   background: rgba(255,45,85,0.1);
@@ -633,7 +635,7 @@ button { font-family: inherit; }
   justify-content: center;
   font-size: 1.15rem;
   color: var(--pink);
-  margin-bottom: 12px;
+  margin: 0 auto 12px;
 }
 .pkg-icon-gold { background: rgba(255,124,42,0.1); color: var(--orange); }
 
@@ -657,6 +659,7 @@ button { font-family: inherit; }
 .pkg-price {
   display: flex;
   align-items: baseline;
+  justify-content: center;
   gap: 3px;
 }
 .pkg-currency { font-size: 0.9rem; font-weight: 600; color: var(--muted); }
@@ -695,12 +698,14 @@ button { font-family: inherit; }
 .pkg-budget div {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 8px;
   font-size: 0.78rem;
   color: var(--muted);
 }
-.pkg-budget div i    { color: var(--purple); flex-shrink: 0; }
-.pkg-budget div strong { color: #fff; }
+.pkg-budget div i      { color: var(--purple); flex-shrink: 0; }
+.pkg-budget div span   { flex: 1; }
+.pkg-budget div strong { color: #fff; white-space: nowrap; }
 
 /* CTA button inside card */
 .package-card .btn { margin: 0 24px 24px; width: calc(100% - 48px); }
