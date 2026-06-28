@@ -1171,6 +1171,9 @@ button { font-family: inherit; }
   .about-content .btn { width: 100%; justify-content: center; }
 
   .why-container     { grid-template-columns: 1fr; }
+  .why-content       { text-align: center; }
+  .why-features      { max-width: 340px; margin: 30px auto 0; }
+  .why-item          { text-align: left; }
 
   .services-grid     { grid-template-columns: repeat(2, 1fr); }
 
