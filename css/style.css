@@ -1161,8 +1161,11 @@ button { font-family: inherit; }
   .hero-stats        { justify-content: center; }
   .hero-scroll       { display: none; }
 
-  .about-container   { grid-template-columns: 1fr; }
+  .about-container   { grid-template-columns: 1fr; gap: 40px; }
   .about-float-badge { right: 16px; }
+  .about-content     { text-align: center; }
+  .about-feature     { justify-content: center; }
+  .about-content .btn { width: 100%; justify-content: center; }
 
   .why-container     { grid-template-columns: 1fr; }
 
