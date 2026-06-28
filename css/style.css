@@ -1194,8 +1194,11 @@ button { font-family: inherit; }
   .packages-grid     { grid-template-columns: 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
 
-  .contact-cards { flex-direction: column; align-items: center; }
-  .contact-card  { width: 100%; max-width: 340px; }
+  .contact-cards     { flex-direction: row; flex-wrap: nowrap; gap: 10px; }
+  .contact-card      { flex: 1; flex-direction: column; align-items: center; text-align: center; padding: 18px 10px; gap: 10px; }
+  .cc-icon           { width: 42px; height: 42px; font-size: 1.1rem; }
+  .contact-card strong { font-size: 0.72rem; }
+  .contact-card span   { font-size: 0.82rem; }
 
   .footer-grid { grid-template-columns: 1fr; }
   .footer-brand p { max-width: 100%; }
