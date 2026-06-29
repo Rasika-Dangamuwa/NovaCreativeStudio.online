@@ -1132,6 +1132,7 @@ button { font-family: inherit; }
 
 @media (max-width: 960px) {
   .why-us { padding: 80px 0 100px; }
+  .hero   { padding: 105px 0 60px; }
 
   /* Switch navbar to hamburger at 960px so desktop nav never overflows */
   .nav-cta   { display: none; }
@@ -1192,6 +1193,21 @@ button { font-family: inherit; }
     transition: none !important;
   }
 
+  /* Reduce hero padding and hide illustration to keep hero above-the-fold */
+  .hero        { padding: 95px 0 48px; }
+  .hero-image  { display: none; }
+  .hero-tagline { margin-bottom: 24px; }
+  .hero-btns   { margin-bottom: 30px; }
+
+  /* Reduce all section paddings for mobile */
+  .services, .about, .packages, .why-us, .testimonials, .contact { padding: 72px 0; }
+
+  /* Tighten section header spacing */
+  .section-header { margin-bottom: 44px; }
+
+  /* Fix email address overflow in contact cards */
+  .contact-card span { word-break: break-word; overflow-wrap: break-word; }
+
   .services-grid     { grid-template-columns: 1fr; }
   .packages-grid     { grid-template-columns: 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
@@ -1201,14 +1217,21 @@ button { font-family: inherit; }
 
   .footer-grid { grid-template-columns: 1fr; }
   .footer-brand p { max-width: 100%; }
+  .footer { padding-top: 44px; }
 }
 
 @media (max-width: 480px) {
-  .hero-btns { flex-direction: column; align-items: stretch; }
+  .hero      { padding: 88px 0 36px; }
+  .hero-badge { font-size: 0.7rem; padding: 7px 14px; letter-spacing: 0.8px; }
+  .hero-subtitle { font-size: 0.92rem; }
+  .hero-tagline  { font-size: 0.88rem; margin-bottom: 20px; }
+  .hero-btns { flex-direction: column; align-items: stretch; margin-bottom: 22px; }
   .btn-lg    { justify-content: center; }
-  .hero-stats { gap: 14px; }
+  .hero-stats { gap: 10px; }
   .hero-stat strong { font-size: 1.35rem; }
   .stat-divider { height: 30px; }
+  .section-header { margin-bottom: 32px; }
+  .pkg-amount { font-size: 1.7rem; }
   .wa-float  { width: 54px; height: 54px; font-size: 1.6rem; bottom: 22px; right: 22px; }
   .back-top  { right: 22px; bottom: 100px; }
 }
