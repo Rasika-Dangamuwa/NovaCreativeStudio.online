@@ -352,6 +352,7 @@ button { font-family: inherit; }
   color: var(--muted);
   margin-bottom: 38px;
 }
+.hero-tagline .gradient-text { white-space: nowrap; }
 
 .hero-btns {
   display: flex;
