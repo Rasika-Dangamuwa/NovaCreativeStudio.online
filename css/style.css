@@ -25,14 +25,14 @@
   --ease:         all 0.3s ease;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   font-family: 'Poppins', sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
-  overflow-x: clip;
+  overflow-x: hidden;
 }
 
 img    { max-width: 100%; height: auto; display: block; }
