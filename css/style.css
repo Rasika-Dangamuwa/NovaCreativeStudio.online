@@ -920,7 +920,7 @@ button { font-family: inherit; }
 .cc-icon.location  { background: rgba(139,47,201,0.14); color: var(--purple); }
 
 .contact-card strong { display: block; font-size: 0.82rem; color: var(--muted); margin-bottom: 2px; }
-.contact-card span   { display: block; font-size: 0.98rem; font-weight: 600; color: #fff; }
+.contact-card span   { display: block; font-size: 0.98rem; font-weight: 600; color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 /* ---- Contact Form ---- */
 .contact-form-wrap {
