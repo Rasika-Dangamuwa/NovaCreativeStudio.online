@@ -786,11 +786,13 @@ button { font-family: inherit; }
 .web-card-features {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 8px;
   flex: 1;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .web-card-features li {
