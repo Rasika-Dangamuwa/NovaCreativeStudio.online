@@ -429,7 +429,7 @@
             <li><i class="fas fa-check"></i> Contact form &amp; WhatsApp integration</li>
             <li><i class="fas fa-check"></i> Up to 6 months support</li>
           </ul>
-          <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20Website%20Development." target="_blank" rel="noopener" class="btn btn-outline btn-full">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <button class="btn btn-outline btn-full" onclick="openModal('modal-web-dev')">View Packages <i class="fas fa-table-list"></i></button>
         </div>
 
         <div class="web-card" data-aos data-aos-delay="100">
@@ -442,7 +442,7 @@
             <li><i class="fas fa-check"></i> Discount coupons &amp; delivery</li>
             <li><i class="fas fa-check"></i> Up to 6 months support</li>
           </ul>
-          <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20E-Commerce%20Development." target="_blank" rel="noopener" class="btn btn-outline btn-full">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <button class="btn btn-outline btn-full" onclick="openModal('modal-ecommerce')">View Packages <i class="fas fa-table-list"></i></button>
         </div>
 
         <div class="web-card" data-aos data-aos-delay="200">
@@ -455,7 +455,7 @@
             <li><i class="fas fa-check"></i> Full UI/UX design included</li>
             <li><i class="fas fa-check"></i> Training &amp; documentation</li>
           </ul>
-          <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20a%20Custom%20Business%20System." target="_blank" rel="noopener" class="btn btn-outline btn-full">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <button class="btn btn-outline btn-full" onclick="openModal('modal-custom-sys')">View Packages <i class="fas fa-table-list"></i></button>
         </div>
 
         <div class="web-card" data-aos>
@@ -468,7 +468,7 @@
             <li><i class="fas fa-check"></i> Sales reports &amp; analytics</li>
             <li><i class="fas fa-check"></i> Multi-branch support available</li>
           </ul>
-          <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20a%20POS%20%26%20Inventory%20System." target="_blank" rel="noopener" class="btn btn-outline btn-full">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <button class="btn btn-outline btn-full" onclick="openModal('modal-pos')">View Packages <i class="fas fa-table-list"></i></button>
         </div>
 
         <div class="web-card" data-aos data-aos-delay="100">
@@ -481,7 +481,7 @@
             <li><i class="fas fa-check"></i> Certificates &amp; assignments</li>
             <li><i class="fas fa-check"></i> Online payment integration</li>
           </ul>
-          <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20an%20LMS%20system." target="_blank" rel="noopener" class="btn btn-outline btn-full">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <button class="btn btn-outline btn-full" onclick="openModal('modal-lms')">View Packages <i class="fas fa-table-list"></i></button>
         </div>
 
         <div class="web-card" data-aos data-aos-delay="200">
@@ -494,7 +494,7 @@
             <li><i class="fas fa-check"></i> Customer account management</li>
             <li><i class="fas fa-check"></i> Hotels, salons, clinics &amp; more</li>
           </ul>
-          <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20a%20Booking%20System." target="_blank" rel="noopener" class="btn btn-outline btn-full">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <button class="btn btn-outline btn-full" onclick="openModal('modal-booking')">View Packages <i class="fas fa-table-list"></i></button>
         </div>
 
         <div class="web-card" data-aos>
@@ -507,7 +507,7 @@
             <li><i class="fas fa-check"></i> CRM &amp; API integrations</li>
             <li><i class="fas fa-check"></i> Business process automation</li>
           </ul>
-          <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20AI%20%26%20Business%20Automation." target="_blank" rel="noopener" class="btn btn-outline btn-full">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <button class="btn btn-outline btn-full" onclick="openModal('modal-ai-auto')">View Packages <i class="fas fa-table-list"></i></button>
         </div>
 
         <div class="web-card" data-aos data-aos-delay="100">
@@ -520,7 +520,7 @@
             <li><i class="fas fa-check"></i> SSL certificate setup</li>
             <li><i class="fas fa-check"></i> Business email setup</li>
           </ul>
-          <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20Hosting%20%26%20Domain%20services." target="_blank" rel="noopener" class="btn btn-outline btn-full">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <button class="btn btn-outline btn-full" onclick="openModal('modal-hosting')">View Packages <i class="fas fa-table-list"></i></button>
         </div>
 
         <div class="web-card" data-aos data-aos-delay="200">
@@ -533,7 +533,7 @@
             <li><i class="fas fa-check"></i> Content updates &amp; monitoring</li>
             <li><i class="fas fa-check"></i> Priority &amp; emergency support</li>
           </ul>
-          <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20Website%20Maintenance." target="_blank" rel="noopener" class="btn btn-outline btn-full">Get Quote <i class="fas fa-arrow-right"></i></a>
+          <button class="btn btn-outline btn-full" onclick="openModal('modal-maintenance')">View Packages <i class="fas fa-table-list"></i></button>
         </div>
 
       </div>
@@ -788,6 +788,537 @@
   <button class="back-top" id="backTop" aria-label="Back to top">
     <i class="fas fa-chevron-up"></i>
   </button>
+
+  <!-- ===== MODALS ===== -->
+
+  <!-- Modal 1: Website Development -->
+  <div class="modal-overlay" id="modal-web-dev">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-web-dev')" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-head">
+        <div class="web-card-icon" style="background:rgba(255,45,85,0.12);color:var(--pink)"><i class="fas fa-globe"></i></div>
+        <div><h2>Website Development</h2><p>Professional websites for businesses of all sizes</p></div>
+      </div>
+      <div class="modal-pkgs">
+        <div class="modal-pkg">
+          <div><h3>Starter</h3><div class="modal-pkg-price">LKR 45,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Up to 5 pages</li>
+            <li><i class="fas fa-check"></i> Responsive design</li>
+            <li><i class="fas fa-check"></i> Contact form</li>
+            <li><i class="fas fa-check"></i> WhatsApp &amp; social integration</li>
+            <li><i class="fas fa-check"></i> Google Maps</li>
+            <li><i class="fas fa-check"></i> Basic SEO</li>
+            <li><i class="fas fa-check"></i> SSL setup</li>
+            <li><i class="fas fa-xmark"></i> Photo gallery</li>
+            <li><i class="fas fa-xmark"></i> Blog / news section</li>
+            <li><i class="fas fa-xmark"></i> Admin panel</li>
+            <li><i class="fas fa-xmark"></i> Training</li>
+            <li><i class="fas fa-check"></i> 1 month support</li>
+          </ul>
+        </div>
+        <div class="modal-pkg popular">
+          <div><span class="modal-pkg-badge">Most Popular</span><h3>Professional</h3><div class="modal-pkg-price">LKR 85,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Up to 15 pages</li>
+            <li><i class="fas fa-check"></i> Responsive design</li>
+            <li><i class="fas fa-check"></i> Contact form</li>
+            <li><i class="fas fa-check"></i> WhatsApp &amp; social integration</li>
+            <li><i class="fas fa-check"></i> Google Maps</li>
+            <li><i class="fas fa-check"></i> Advanced SEO</li>
+            <li><i class="fas fa-check"></i> SSL setup</li>
+            <li><i class="fas fa-check"></i> Photo gallery</li>
+            <li><i class="fas fa-check"></i> Blog / news section</li>
+            <li><i class="fas fa-check"></i> Basic admin panel</li>
+            <li><i class="fas fa-check"></i> 1 training session</li>
+            <li><i class="fas fa-check"></i> 3 months support</li>
+          </ul>
+        </div>
+        <div class="modal-pkg">
+          <div><h3>Enterprise</h3><div class="modal-pkg-price">From LKR 150,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Unlimited pages</li>
+            <li><i class="fas fa-check"></i> Responsive design</li>
+            <li><i class="fas fa-check"></i> All integrations</li>
+            <li><i class="fas fa-check"></i> Premium speed optimization</li>
+            <li><i class="fas fa-check"></i> Advanced SEO</li>
+            <li><i class="fas fa-check"></i> SSL setup</li>
+            <li><i class="fas fa-check"></i> Photo gallery &amp; blog</li>
+            <li><i class="fas fa-check"></i> Advanced admin panel</li>
+            <li><i class="fas fa-check"></i> 3 training sessions</li>
+            <li><i class="fas fa-check"></i> 6 months support</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-cta">
+        <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20Website%20Development.%20Please%20share%20more%20details." target="_blank" rel="noopener" class="btn btn-primary btn-full"><i class="fab fa-whatsapp"></i> Get a Free Quote on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: E-Commerce Solutions -->
+  <div class="modal-overlay" id="modal-ecommerce">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-ecommerce')" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-head">
+        <div class="web-card-icon" style="background:rgba(139,47,201,0.12);color:var(--purple)"><i class="fas fa-cart-shopping"></i></div>
+        <div><h2>E-Commerce Solutions</h2><p>Complete online stores with payment gateway integration</p></div>
+      </div>
+      <div class="modal-pkgs">
+        <div class="modal-pkg">
+          <div><h3>Starter</h3><div class="modal-pkg-price">LKR 95,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Up to 100 products</li>
+            <li><i class="fas fa-check"></i> Shopping cart</li>
+            <li><i class="fas fa-check"></i> Online payments</li>
+            <li><i class="fas fa-check"></i> Order management</li>
+            <li><i class="fas fa-check"></i> Customer accounts</li>
+            <li><i class="fas fa-check"></i> Basic inventory</li>
+            <li><i class="fas fa-check"></i> Basic sales reports</li>
+            <li><i class="fas fa-check"></i> Admin dashboard</li>
+            <li><i class="fas fa-xmark"></i> Discount coupons</li>
+            <li><i class="fas fa-xmark"></i> Delivery management</li>
+            <li><i class="fas fa-xmark"></i> Multi-vendor</li>
+            <li><i class="fas fa-check"></i> 2 months support</li>
+          </ul>
+        </div>
+        <div class="modal-pkg popular">
+          <div><span class="modal-pkg-badge">Most Popular</span><h3>Professional</h3><div class="modal-pkg-price">LKR 180,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Unlimited products</li>
+            <li><i class="fas fa-check"></i> Shopping cart</li>
+            <li><i class="fas fa-check"></i> Online payments</li>
+            <li><i class="fas fa-check"></i> Order management</li>
+            <li><i class="fas fa-check"></i> Customer accounts</li>
+            <li><i class="fas fa-check"></i> Advanced inventory</li>
+            <li><i class="fas fa-check"></i> Advanced sales reports</li>
+            <li><i class="fas fa-check"></i> Premium admin dashboard</li>
+            <li><i class="fas fa-check"></i> Discount coupons</li>
+            <li><i class="fas fa-check"></i> Delivery management</li>
+            <li><i class="fas fa-xmark"></i> Multi-vendor</li>
+            <li><i class="fas fa-check"></i> 3 months support</li>
+          </ul>
+        </div>
+        <div class="modal-pkg">
+          <div><h3>Enterprise</h3><div class="modal-pkg-price">From LKR 350,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Unlimited products</li>
+            <li><i class="fas fa-check"></i> Shopping cart</li>
+            <li><i class="fas fa-check"></i> Online payments</li>
+            <li><i class="fas fa-check"></i> Order management</li>
+            <li><i class="fas fa-check"></i> Customer accounts</li>
+            <li><i class="fas fa-check"></i> Enterprise inventory</li>
+            <li><i class="fas fa-check"></i> Advanced sales reports</li>
+            <li><i class="fas fa-check"></i> Premium admin dashboard</li>
+            <li><i class="fas fa-check"></i> Discount coupons</li>
+            <li><i class="fas fa-check"></i> Delivery management</li>
+            <li><i class="fas fa-check"></i> Multi-vendor support</li>
+            <li><i class="fas fa-check"></i> 6 months support</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-cta">
+        <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20E-Commerce%20Development.%20Please%20share%20more%20details." target="_blank" rel="noopener" class="btn btn-primary btn-full"><i class="fab fa-whatsapp"></i> Get a Free Quote on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Custom Business Systems -->
+  <div class="modal-overlay" id="modal-custom-sys">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-custom-sys')" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-head">
+        <div class="web-card-icon" style="background:rgba(255,124,42,0.12);color:var(--orange)"><i class="fas fa-gears"></i></div>
+        <div><h2>Custom Business Systems</h2><p>Tailored enterprise software built around your exact business needs</p></div>
+      </div>
+      <div class="modal-pkgs">
+        <div class="modal-pkg">
+          <div><h3>Starter</h3><div class="modal-pkg-price">LKR 180,000 <span class="period">– 300,000</span></div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Requirement analysis</li>
+            <li><i class="fas fa-check"></i> UI/UX design</li>
+            <li><i class="fas fa-check"></i> Core module development</li>
+            <li><i class="fas fa-check"></i> Basic user roles</li>
+            <li><i class="fas fa-check"></i> Testing &amp; deployment</li>
+            <li><i class="fas fa-check"></i> User training</li>
+            <li><i class="fas fa-check"></i> Documentation</li>
+            <li><i class="fas fa-check"></i> Warranty &amp; support</li>
+          </ul>
+        </div>
+        <div class="modal-pkg popular">
+          <div><span class="modal-pkg-badge">Most Popular</span><h3>Professional</h3><div class="modal-pkg-price">LKR 300,000 <span class="period">– 700,000</span></div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Requirement analysis</li>
+            <li><i class="fas fa-check"></i> Advanced UI/UX design</li>
+            <li><i class="fas fa-check"></i> Multi-module development</li>
+            <li><i class="fas fa-check"></i> Advanced user roles</li>
+            <li><i class="fas fa-check"></i> Reports &amp; analytics</li>
+            <li><i class="fas fa-check"></i> API integrations</li>
+            <li><i class="fas fa-check"></i> Testing &amp; deployment</li>
+            <li><i class="fas fa-check"></i> User training</li>
+            <li><i class="fas fa-check"></i> Documentation</li>
+            <li><i class="fas fa-check"></i> Extended warranty &amp; support</li>
+          </ul>
+        </div>
+        <div class="modal-pkg">
+          <div><h3>Enterprise</h3><div class="modal-pkg-price">LKR 700,000 <span class="period">– 2,000,000+</span></div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Full-scale system design</li>
+            <li><i class="fas fa-check"></i> Premium UI/UX design</li>
+            <li><i class="fas fa-check"></i> Enterprise module suite</li>
+            <li><i class="fas fa-check"></i> Custom workflow automation</li>
+            <li><i class="fas fa-check"></i> Advanced analytics</li>
+            <li><i class="fas fa-check"></i> Full API integrations</li>
+            <li><i class="fas fa-check"></i> Cloud deployment</li>
+            <li><i class="fas fa-check"></i> Comprehensive training</li>
+            <li><i class="fas fa-check"></i> Full documentation</li>
+            <li><i class="fas fa-check"></i> Priority support &amp; SLA</li>
+          </ul>
+        </div>
+      </div>
+      <p class="modal-tags-label">Suitable For</p>
+      <div class="modal-tags">
+        <span class="modal-tag">CRM Systems</span><span class="modal-tag">ERP Systems</span><span class="modal-tag">HR Management</span><span class="modal-tag">Payroll Systems</span><span class="modal-tag">Attendance Systems</span><span class="modal-tag">Warehouse Management</span><span class="modal-tag">Finance Management</span><span class="modal-tag">Document Management</span><span class="modal-tag">Custom Business Software</span>
+      </div>
+      <div class="modal-cta">
+        <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20a%20Custom%20Business%20System.%20Please%20share%20more%20details." target="_blank" rel="noopener" class="btn btn-primary btn-full"><i class="fab fa-whatsapp"></i> Get a Free Quote on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: POS & Inventory Systems -->
+  <div class="modal-overlay" id="modal-pos">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-pos')" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-head">
+        <div class="web-card-icon" style="background:rgba(37,211,102,0.12);color:var(--green)"><i class="fas fa-cash-register"></i></div>
+        <div><h2>POS &amp; Inventory Systems</h2><p>Complete point-of-sale and stock management for your business</p></div>
+      </div>
+      <div class="modal-pkgs">
+        <div class="modal-pkg">
+          <div><h3>Standard</h3><div class="modal-pkg-price">LKR 150,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> POS billing</li>
+            <li><i class="fas fa-check"></i> Inventory management</li>
+            <li><i class="fas fa-check"></i> Barcode support</li>
+            <li><i class="fas fa-check"></i> Basic customer management</li>
+            <li><i class="fas fa-check"></i> Basic supplier management</li>
+            <li><i class="fas fa-xmark"></i> Purchase orders</li>
+            <li><i class="fas fa-check"></i> Basic sales reports</li>
+            <li><i class="fas fa-check"></i> 2 user accounts</li>
+            <li><i class="fas fa-xmark"></i> Multi-branch</li>
+            <li><i class="fas fa-xmark"></i> Cloud backup</li>
+            <li><i class="fas fa-check"></i> 1 training session</li>
+            <li><i class="fas fa-check"></i> 2 months support</li>
+          </ul>
+        </div>
+        <div class="modal-pkg popular">
+          <div><span class="modal-pkg-badge">Most Popular</span><h3>Business</h3><div class="modal-pkg-price">LKR 250,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> POS billing</li>
+            <li><i class="fas fa-check"></i> Inventory management</li>
+            <li><i class="fas fa-check"></i> Barcode support</li>
+            <li><i class="fas fa-check"></i> Advanced customer management</li>
+            <li><i class="fas fa-check"></i> Advanced supplier management</li>
+            <li><i class="fas fa-check"></i> Purchase orders</li>
+            <li><i class="fas fa-check"></i> Advanced sales reports</li>
+            <li><i class="fas fa-check"></i> 10 user accounts</li>
+            <li><i class="fas fa-circle-dot"></i> Multi-branch (optional)</li>
+            <li><i class="fas fa-circle-dot"></i> Cloud backup (optional)</li>
+            <li><i class="fas fa-check"></i> 2 training sessions</li>
+            <li><i class="fas fa-check"></i> 4 months support</li>
+          </ul>
+        </div>
+        <div class="modal-pkg">
+          <div><h3>Enterprise</h3><div class="modal-pkg-price">From LKR 450,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> POS billing</li>
+            <li><i class="fas fa-check"></i> Inventory management</li>
+            <li><i class="fas fa-check"></i> Barcode support</li>
+            <li><i class="fas fa-check"></i> Premium customer management</li>
+            <li><i class="fas fa-check"></i> Advanced supplier management</li>
+            <li><i class="fas fa-check"></i> Purchase orders</li>
+            <li><i class="fas fa-check"></i> Premium sales reports</li>
+            <li><i class="fas fa-check"></i> Unlimited users</li>
+            <li><i class="fas fa-check"></i> Multi-branch included</li>
+            <li><i class="fas fa-check"></i> Cloud backup included</li>
+            <li><i class="fas fa-check"></i> Unlimited training</li>
+            <li><i class="fas fa-check"></i> 6 months support</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-cta">
+        <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20a%20POS%20%26%20Inventory%20System.%20Please%20share%20more%20details." target="_blank" rel="noopener" class="btn btn-primary btn-full"><i class="fab fa-whatsapp"></i> Get a Free Quote on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Learning Management (LMS) -->
+  <div class="modal-overlay" id="modal-lms">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-lms')" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-head">
+        <div class="web-card-icon" style="background:rgba(255,45,85,0.12);color:var(--pink)"><i class="fas fa-graduation-cap"></i></div>
+        <div><h2>Learning Management (LMS)</h2><p>Complete e-learning platforms for educators, trainers &amp; institutions</p></div>
+      </div>
+      <div class="modal-pkgs">
+        <div class="modal-pkg">
+          <div><h3>Starter</h3><div class="modal-pkg-price">LKR 220,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Student registration</li>
+            <li><i class="fas fa-check"></i> Instructor panel</li>
+            <li><i class="fas fa-check"></i> Course management</li>
+            <li><i class="fas fa-check"></i> Video lessons</li>
+            <li><i class="fas fa-check"></i> Basic online exams</li>
+            <li><i class="fas fa-xmark"></i> Assignments</li>
+            <li><i class="fas fa-check"></i> Basic certificates</li>
+            <li><i class="fas fa-check"></i> Online payments</li>
+            <li><i class="fas fa-check"></i> Student dashboard</li>
+            <li><i class="fas fa-check"></i> Basic reports</li>
+            <li><i class="fas fa-check"></i> Mobile responsive</li>
+            <li><i class="fas fa-check"></i> 3 months support</li>
+          </ul>
+        </div>
+        <div class="modal-pkg popular">
+          <div><span class="modal-pkg-badge">Most Popular</span><h3>Professional</h3><div class="modal-pkg-price">LKR 400,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Student registration</li>
+            <li><i class="fas fa-check"></i> Instructor panel</li>
+            <li><i class="fas fa-check"></i> Course management</li>
+            <li><i class="fas fa-check"></i> Video lessons</li>
+            <li><i class="fas fa-check"></i> Advanced online exams</li>
+            <li><i class="fas fa-check"></i> Assignments</li>
+            <li><i class="fas fa-check"></i> Advanced certificates</li>
+            <li><i class="fas fa-check"></i> Online payments</li>
+            <li><i class="fas fa-check"></i> Student dashboard</li>
+            <li><i class="fas fa-check"></i> Advanced reports</li>
+            <li><i class="fas fa-check"></i> Mobile responsive</li>
+            <li><i class="fas fa-check"></i> 6 months support</li>
+          </ul>
+        </div>
+        <div class="modal-pkg">
+          <div><h3>Enterprise</h3><div class="modal-pkg-price">From LKR 700,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Student registration</li>
+            <li><i class="fas fa-check"></i> Instructor panel</li>
+            <li><i class="fas fa-check"></i> Course management</li>
+            <li><i class="fas fa-check"></i> Video lessons</li>
+            <li><i class="fas fa-check"></i> Premium online exams</li>
+            <li><i class="fas fa-check"></i> Assignments</li>
+            <li><i class="fas fa-check"></i> Premium certificates</li>
+            <li><i class="fas fa-check"></i> Online payments</li>
+            <li><i class="fas fa-check"></i> Premium student dashboard</li>
+            <li><i class="fas fa-check"></i> Advanced reports</li>
+            <li><i class="fas fa-check"></i> Mobile responsive</li>
+            <li><i class="fas fa-check"></i> 12 months support</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-cta">
+        <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20an%20LMS%20system.%20Please%20share%20more%20details." target="_blank" rel="noopener" class="btn btn-primary btn-full"><i class="fab fa-whatsapp"></i> Get a Free Quote on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Booking & Reservation Systems -->
+  <div class="modal-overlay" id="modal-booking">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-booking')" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-head">
+        <div class="web-card-icon" style="background:rgba(139,47,201,0.12);color:var(--purple)"><i class="fas fa-calendar-check"></i></div>
+        <div><h2>Booking &amp; Reservation Systems</h2><p>Smart online booking solutions for service-based businesses</p></div>
+      </div>
+      <div class="modal-pkgs">
+        <div class="modal-pkg">
+          <div><h3>Starter</h3><div class="modal-pkg-price">LKR 120,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Online booking</li>
+            <li><i class="fas fa-check"></i> Calendar management</li>
+            <li><i class="fas fa-check"></i> Admin dashboard</li>
+            <li><i class="fas fa-xmark"></i> Online payments</li>
+            <li><i class="fas fa-check"></i> Email notifications</li>
+            <li><i class="fas fa-xmark"></i> SMS notifications</li>
+            <li><i class="fas fa-check"></i> Basic customer accounts</li>
+            <li><i class="fas fa-check"></i> Basic reports</li>
+            <li><i class="fas fa-xmark"></i> Multi-branch</li>
+            <li><i class="fas fa-check"></i> 2 months support</li>
+          </ul>
+        </div>
+        <div class="modal-pkg popular">
+          <div><span class="modal-pkg-badge">Most Popular</span><h3>Professional</h3><div class="modal-pkg-price">LKR 220,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Online booking</li>
+            <li><i class="fas fa-check"></i> Calendar management</li>
+            <li><i class="fas fa-check"></i> Admin dashboard</li>
+            <li><i class="fas fa-check"></i> Online payments</li>
+            <li><i class="fas fa-check"></i> Email notifications</li>
+            <li><i class="fas fa-circle-dot"></i> SMS notifications (optional)</li>
+            <li><i class="fas fa-check"></i> Advanced customer accounts</li>
+            <li><i class="fas fa-check"></i> Advanced reports</li>
+            <li><i class="fas fa-circle-dot"></i> Multi-branch (optional)</li>
+            <li><i class="fas fa-check"></i> 4 months support</li>
+          </ul>
+        </div>
+        <div class="modal-pkg">
+          <div><h3>Enterprise</h3><div class="modal-pkg-price">From LKR 450,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Online booking</li>
+            <li><i class="fas fa-check"></i> Calendar management</li>
+            <li><i class="fas fa-check"></i> Premium dashboard</li>
+            <li><i class="fas fa-check"></i> Online payments</li>
+            <li><i class="fas fa-check"></i> Email notifications</li>
+            <li><i class="fas fa-check"></i> SMS notifications</li>
+            <li><i class="fas fa-check"></i> Premium customer accounts</li>
+            <li><i class="fas fa-check"></i> Premium reports</li>
+            <li><i class="fas fa-check"></i> Multi-branch support</li>
+            <li><i class="fas fa-check"></i> 6 months support</li>
+          </ul>
+        </div>
+      </div>
+      <p class="modal-tags-label">Suitable For</p>
+      <div class="modal-tags">
+        <span class="modal-tag">Hotels</span><span class="modal-tag">Salons</span><span class="modal-tag">Clinics</span><span class="modal-tag">Gyms</span><span class="modal-tag">Indoor Game Centers</span><span class="modal-tag">Sports Clubs</span><span class="modal-tag">Vehicle Rental</span><span class="modal-tag">Appointment Booking</span>
+      </div>
+      <div class="modal-cta">
+        <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20a%20Booking%20%26%20Reservation%20System.%20Please%20share%20more%20details." target="_blank" rel="noopener" class="btn btn-primary btn-full"><i class="fab fa-whatsapp"></i> Get a Free Quote on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7: AI & Business Automation -->
+  <div class="modal-overlay" id="modal-ai-auto">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-ai-auto')" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-head">
+        <div class="web-card-icon" style="background:rgba(255,124,42,0.12);color:var(--orange)"><i class="fas fa-robot"></i></div>
+        <div><h2>AI &amp; Business Automation</h2><p>Automate your business workflows with AI-powered solutions</p></div>
+      </div>
+      <div class="modal-pkgs">
+        <div class="modal-pkg">
+          <div><h3>Starter</h3><div class="modal-pkg-price">LKR 75,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> AI chatbot setup</li>
+            <li><i class="fas fa-check"></i> Basic WhatsApp automation</li>
+            <li><i class="fas fa-check"></i> Email automation</li>
+            <li><i class="fas fa-check"></i> 1 workflow automation</li>
+            <li><i class="fas fa-xmark"></i> CRM integration</li>
+            <li><i class="fas fa-xmark"></i> API integrations</li>
+            <li><i class="fas fa-xmark"></i> Business process automation</li>
+          </ul>
+        </div>
+        <div class="modal-pkg popular">
+          <div><span class="modal-pkg-badge">Most Popular</span><h3>Business</h3><div class="modal-pkg-price">LKR 150,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Advanced AI chatbot</li>
+            <li><i class="fas fa-check"></i> Advanced WhatsApp automation</li>
+            <li><i class="fas fa-check"></i> Email automation</li>
+            <li><i class="fas fa-check"></i> Multiple workflow automations</li>
+            <li><i class="fas fa-check"></i> CRM integration</li>
+            <li><i class="fas fa-check"></i> API integrations</li>
+            <li><i class="fas fa-xmark"></i> Full business process automation</li>
+          </ul>
+        </div>
+        <div class="modal-pkg">
+          <div><h3>Enterprise</h3><div class="modal-pkg-price">From LKR 350,000</div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Enterprise AI chatbot</li>
+            <li><i class="fas fa-check"></i> Full WhatsApp automation</li>
+            <li><i class="fas fa-check"></i> Email automation</li>
+            <li><i class="fas fa-check"></i> Unlimited workflow automations</li>
+            <li><i class="fas fa-check"></i> Advanced CRM integrations</li>
+            <li><i class="fas fa-check"></i> Custom API development</li>
+            <li><i class="fas fa-check"></i> Full business process automation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-cta">
+        <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20AI%20%26%20Business%20Automation.%20Please%20share%20more%20details." target="_blank" rel="noopener" class="btn btn-primary btn-full"><i class="fab fa-whatsapp"></i> Get a Free Quote on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8: Hosting & Domain Services -->
+  <div class="modal-overlay" id="modal-hosting">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-hosting')" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-head">
+        <div class="web-card-icon" style="background:rgba(37,211,102,0.12);color:var(--green)"><i class="fas fa-server"></i></div>
+        <div><h2>Hosting &amp; Domain Services</h2><p>Reliable web hosting and domain registration for your business</p></div>
+      </div>
+      <table class="modal-price-table">
+        <thead><tr><th>Service</th><th>Price</th></tr></thead>
+        <tbody>
+          <tr><td>Domain Registration</td><td>From LKR 5,000 / year</td></tr>
+          <tr><td>Shared Hosting</td><td>LKR 15,000 / year</td></tr>
+          <tr><td>Business Hosting</td><td>LKR 30,000 / year</td></tr>
+          <tr><td>Premium Hosting</td><td>LKR 60,000 / year</td></tr>
+          <tr><td>SSL Certificate Setup</td><td>From LKR 7,500</td></tr>
+          <tr><td>Business Email Setup</td><td>From LKR 10,000</td></tr>
+        </tbody>
+      </table>
+      <div class="modal-cta">
+        <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20Hosting%20%26%20Domain%20services.%20Please%20share%20more%20details." target="_blank" rel="noopener" class="btn btn-primary btn-full"><i class="fab fa-whatsapp"></i> Get a Free Quote on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 9: Website Maintenance -->
+  <div class="modal-overlay" id="modal-maintenance">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-maintenance')" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-head">
+        <div class="web-card-icon" style="background:rgba(255,45,85,0.12);color:var(--pink)"><i class="fas fa-screwdriver-wrench"></i></div>
+        <div><h2>Website Maintenance</h2><p>Keep your website secure, fast, and always up to date</p></div>
+      </div>
+      <div class="modal-pkgs">
+        <div class="modal-pkg">
+          <div><h3>Essential Care</h3><div class="modal-pkg-price">LKR 15,000 <span class="period">/ month</span></div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Security updates</li>
+            <li><i class="fas fa-check"></i> Regular backups</li>
+            <li><i class="fas fa-check"></i> Minor content updates</li>
+            <li><i class="fas fa-check"></i> Uptime monitoring</li>
+            <li><i class="fas fa-xmark"></i> Performance optimization</li>
+            <li><i class="fas fa-xmark"></i> Priority support</li>
+            <li><i class="fas fa-xmark"></i> Monthly reports</li>
+            <li><i class="fas fa-xmark"></i> Emergency support</li>
+            <li><i class="fas fa-xmark"></i> Dedicated account manager</li>
+          </ul>
+        </div>
+        <div class="modal-pkg popular">
+          <div><span class="modal-pkg-badge">Most Popular</span><h3>Business Care</h3><div class="modal-pkg-price">LKR 30,000 <span class="period">/ month</span></div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Security updates</li>
+            <li><i class="fas fa-check"></i> Regular backups</li>
+            <li><i class="fas fa-check"></i> Up to 5 hrs of changes</li>
+            <li><i class="fas fa-check"></i> Uptime monitoring</li>
+            <li><i class="fas fa-check"></i> Performance optimization</li>
+            <li><i class="fas fa-check"></i> Priority support</li>
+            <li><i class="fas fa-check"></i> Monthly reports</li>
+            <li><i class="fas fa-xmark"></i> Emergency support</li>
+            <li><i class="fas fa-xmark"></i> Dedicated account manager</li>
+          </ul>
+        </div>
+        <div class="modal-pkg">
+          <div><h3>Premium Care</h3><div class="modal-pkg-price">LKR 50,000 <span class="period">/ month</span></div></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Security updates</li>
+            <li><i class="fas fa-check"></i> Regular backups</li>
+            <li><i class="fas fa-check"></i> Unlimited minor updates</li>
+            <li><i class="fas fa-check"></i> Uptime monitoring</li>
+            <li><i class="fas fa-check"></i> Performance optimization</li>
+            <li><i class="fas fa-check"></i> Priority support</li>
+            <li><i class="fas fa-check"></i> Monthly reports</li>
+            <li><i class="fas fa-check"></i> Emergency support</li>
+            <li><i class="fas fa-check"></i> Dedicated account manager</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-cta">
+        <a href="https://wa.me/94758997750?text=Hi!%20I'm%20interested%20in%20Website%20Maintenance.%20Please%20share%20more%20details." target="_blank" rel="noopener" class="btn btn-primary btn-full"><i class="fab fa-whatsapp"></i> Get a Free Quote on WhatsApp</a>
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
