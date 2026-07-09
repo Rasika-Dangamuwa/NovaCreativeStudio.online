@@ -760,11 +760,13 @@ button { font-family: inherit; }
   justify-content: center;
   font-size: 1.4rem;
   flex-shrink: 0;
+  margin: 0 auto;
 }
 
 .web-card h3 {
   font-size: 1.02rem;
   font-weight: 700;
+  text-align: center;
   color: #fff;
   margin: 0;
 }
