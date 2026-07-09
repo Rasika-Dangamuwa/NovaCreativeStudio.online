@@ -1356,10 +1356,11 @@ button { font-family: inherit; }
 
 .modal-head {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 14px;
+  text-align: center;
+  gap: 10px;
   margin-bottom: 28px;
-  padding-right: 40px;
 }
 .modal-head h2 { font-size: 1.3rem; font-weight: 800; color: #fff; margin: 0 0 3px; }
 .modal-head p  { font-size: 0.85rem; color: var(--muted); margin: 0; }
@@ -1436,7 +1437,6 @@ button { font-family: inherit; }
 @media (max-width: 680px) {
   .modal { padding: 24px 18px; max-height: 92vh; }
   .modal-pkgs { grid-template-columns: 1fr; }
-  .modal-head { flex-direction: column; text-align: center; align-items: center; padding-right: 0; }
   .modal-head h2 { font-size: 1.1rem; }
   .modal-pkg h3 { text-align: center; }
   .modal-pkg-price { text-align: center; }
