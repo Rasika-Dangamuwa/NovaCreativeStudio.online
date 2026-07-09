@@ -774,6 +774,7 @@ button { font-family: inherit; }
 .web-card-price {
   font-size: 0.88rem;
   color: var(--muted);
+  text-align: center;
 }
 
 .web-card-price strong {
