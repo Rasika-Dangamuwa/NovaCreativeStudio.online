@@ -1435,5 +1435,9 @@ button { font-family: inherit; }
 @media (max-width: 680px) {
   .modal { padding: 24px 18px; max-height: 92vh; }
   .modal-pkgs { grid-template-columns: 1fr; }
+  .modal-head { flex-direction: column; text-align: center; align-items: center; padding-right: 0; }
   .modal-head h2 { font-size: 1.1rem; }
+  .modal-pkg h3 { text-align: center; }
+  .modal-pkg-price { text-align: center; }
+  .modal-pkg-badge { margin-left: auto; margin-right: auto; }
 }
